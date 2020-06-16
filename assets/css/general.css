@@ -9,6 +9,16 @@ header h1, header img{
     vertical-align: middle;
 }
 
+main {
+    max-width: 600px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    border-bottom: 1px solid gray;
+}
+
 #header-logo {
     width: 100px;
 }
