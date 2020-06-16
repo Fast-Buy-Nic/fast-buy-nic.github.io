@@ -2,3 +2,7 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
 }
+
+#header-logo {
+    width: 100px
+}
