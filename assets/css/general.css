@@ -1,8 +1,30 @@
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1, header img{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #header-logo {
-    width: 100px
+    width: 100px;
+}
+
+.person-info {
+    margin-bottom: 20px;
+    list-style: none;
+    min-height: 100px;
+}
+
+.person-info>* {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.person-face {
+    width: 100px;
+    border-radius: 50%;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,85 @@
     <link rel="stylesheet" href="assets/css/general.css">
     <script src="assets/javascript/main.js"></script>
 </head>
+
 <body>
     <header>
         <img id="header-logo" src="assets/imgs/Imagotipo 1.svg" alt="Logo">
         <h1>FastBuy</h1>
+
+        <p>The eMarket of your choice</p>
     </header>
+    <main>
+        <section id="details">
+            <div class="mision">
+                <h2>Mision:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt
+                    similique eligendi rem saepe sint. Animi sit iure consequuntur aperiam
+                    perferendis perspiciatis nam nihil, ipsum laborum! Temporibus
+                    laudantium ut excepturi.</p>
+            </div>
+            <div class="vision">
+                <h2>Vision:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt
+                    similique eligendi rem saepe sint. Animi sit iure consequuntur aperiam
+                    perferendis perspiciatis nam nihil, ipsum laborum! Temporibus
+                    laudantium ut excepturi.</p>
+            </div>
+        </section>
+        <section id="members">
+            <h2>Who are we?</h2>
+
+            <!-- TODO: Yeah... who are we?
+            
+                We need the order of the people, and the pictures of their faces.-->
+            <ul>
+                <li class="person-info">
+                    <img class="person-face" src="https://picsum.photos/200" alt="Cara">
+                    <h3>Member 1</h3>
+                </li>
+                <li class="person-info">
+                    <img class="person-face" src="https://picsum.photos/200" alt="Cara">
+                    <h3>Member 2</h3>
+                </li>
+                <li class="person-info">
+                    <img class="person-face" src="https://picsum.photos/200" alt="Cara">
+                    <h3>Member 3</h3>
+                </li>
+            </ul>
+        </section>
+        <section class="facebook-feed">
+            <h2>Follow us on facebook!</h2>
+            <!-- TODO: Get an app token from the actual facebook page instead of mine. -->
+            <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffastbuynic&tabs=timeline&width=400&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=327242687934388"
+                    width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowTransparency="true" allow="encrypted-media"></iframe>
+        </section>
+    </main>
+    <footer>
+        <section id="write-use">
+            <h2>Write us a message!</h2>
+            <form>
+                <label for="name">Your Name</label>
+                <input name="name" type="text">
+                <br>
+                <label for="message">What do you wanna tell us?</label>
+                <textarea name="message"></textarea>
+            </form>
+        </section>
+        <section id="contact-info">
+            <div id="social">
+                <h2>Social Networks</h2>
+                <div>Facebook: <a href="https://www.facebook.com/FastBuyNic">@FastBuyNic</a></div>
+                <div>Instagram: <a href="https://www.instagram.com/fastbuynic">@fastbuynic</a></div>
+            </div>
+            <div id="direct">
+                <h2>Direct Contact</h2>
+                <div>Phone Number: <a href="#">+505 8532 6125</a></div>
+                <div>Email: <a href="mailto:buyfast60@gmail.com">buyfast60@gmail.com</a></div>
+            </div>
+        </section>
+    </footer>
 </body>
+
 </html>
