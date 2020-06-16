@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=327242687934388&autoLogAppEvents=1"
+        nonce="Yo0IftVP"></script>
     <header>
         <img id="header-logo" src="assets/imgs/Imagotipo 1.svg" alt="Logo">
         <h1>FastBuy</h1>
@@ -55,13 +59,18 @@
                 </li>
             </ul>
         </section>
-        <section class="facebook-feed">
+        <section id="facebook-feed">
             <h2>Follow us on facebook!</h2>
             <!-- TODO: Get an app token from the actual facebook page instead of mine. -->
-            <iframe
-                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffastbuynic&tabs=timeline&width=400&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=327242687934388"
-                    width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowTransparency="true" allow="encrypted-media"></iframe>
+
+            <div id="fb-container">
+                <div class="fb-page" data-href="https://www.facebook.com/FastBuyNic" data-tabs="timeline" data-width=""
+                    data-height="" data-small-header="false" data-hide-cover="false"
+                    data-show-facepile="true" data-adapt-container-width="true">
+                    <blockquote cite="https://www.facebook.com/FastBuyNic" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/FastBuyNic">Fast Buy Nic.</a></blockquote>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

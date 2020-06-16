@@ -1,6 +1,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
 }
 
 header h1, header img{
@@ -27,4 +28,8 @@ header h1, header img{
 .person-face {
     width: 100px;
     border-radius: 50%;
+}
+
+#fb-container {
+    max-width: 450px;
 }
