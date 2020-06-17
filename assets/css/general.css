@@ -43,6 +43,8 @@ header h1 {
 
     color: #ff00;
     background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
     background-position: -12em 0;
     background-repeat: no-repeat;
 
