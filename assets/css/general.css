@@ -89,6 +89,11 @@ section {
     border-radius: 50%;
 }
 
+.person-info:nth-child(2n+1)
+{
+    text-align: right;
+}
+
 #fb-container {
     max-width: 450px;
 }
