@@ -63,14 +63,12 @@ header h1 {
 
 main section {
     border-bottom: 1px solid gray;
-    min-height: 60vh;
 }
 
 section {
-    padding: 5px 10px;
-    max-width: 950px;
-    margin: 0 auto;
-    margin-top: 20px;
+    padding: 30px 10px;
+    max-width: 1000px;
+    margin: 30px auto;
 }
 
 .person-info {
@@ -98,6 +96,18 @@ section {
 
 #fb-container {
     max-width: 450px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+footer section {
+    margin: 0;
 }
 
 @keyframes appear-left {
