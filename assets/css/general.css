@@ -32,6 +32,16 @@ header h1, header img{
     animation-fill-mode: forwards;
 }
 
+#header-logo {
+    width: 6em;
+    margin: 0;
+    margin-left: -2em;
+
+    transform: translateX(-10em);
+
+    animation-name: appear-left;
+}
+
 header h1 {
     font-size: 3em;
     background: linear-gradient(
@@ -51,22 +61,16 @@ header h1 {
     animation-name: fade-left;
 }
 
-section {
-    padding: 5px 10px;
+main section {
     border-bottom: 1px solid gray;
-    max-width: 950px;
-    margin: 0 auto;
-    margin-top: 50px;
+    min-height: 60vh;
 }
 
-#header-logo {
-    width: 6em;
-    margin: 0;
-    margin-left: -2em;
-
-    transform: translateX(-10em);
-
-    animation-name: appear-left;
+section {
+    padding: 5px 10px;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .person-info {
@@ -89,6 +93,7 @@ section {
 .person-info:nth-child(2n+1)
 {
     text-align: right;
+    direction: rtl;
 }
 
 #fb-container {
