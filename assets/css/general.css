@@ -1,13 +1,13 @@
 html {
-    font-size: clamp(20px, calc(1vw), 28px);
+    /* font-size: clamp(12px, calc(1.5vw), 40px); */
+    font-size: 20px;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
 
-    background: #111;
-    color: white;
+    color: #464646
 }
 
 a {
@@ -20,7 +20,7 @@ a:visited {
 }
 
 header {
-    min-height: 500px;
+    min-height: min(600px, 70vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,21 +42,21 @@ header h1, header img{
 }
 
 #header-logo {
-    width: 6em;
+    width: 3em;
     margin: 0;
-    margin-left: -2em;
+    margin-left: -1em;
 
-    transform: translateX(-10em);
+    transform: translateX(-20em);
 
     animation-name: appear-left;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 4.5rem;
     background: linear-gradient(
         to left,
-        #111 0%,
-        #fff 50%
+        #fff 0%,
+        #464646 50%
     );
     margin: 0;
 
@@ -64,10 +64,15 @@ header h1 {
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    background-position: -12em 0;
+    background-position: -20em 0;
     background-repeat: no-repeat;
 
     animation-name: fade-left;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 main section {
@@ -76,8 +81,12 @@ main section {
 
 section {
     padding: 30px 10px;
-    max-width: 1000px;
     margin: 30px auto;
+}
+
+#members ul {
+    margin: 0;
+    padding: 0;
 }
 
 .person-info {
@@ -121,7 +130,7 @@ footer section {
 
 @keyframes appear-left {
     0% {
-        transform: translateX(-10em);
+        transform: translateX(-20em);
     }
 
     100% {
@@ -131,7 +140,7 @@ footer section {
 
 @keyframes fade-left {
     0% {
-        background-position-x: -12em;
+        background-position-x: -20em;
     }
 
     100% {
@@ -141,12 +150,13 @@ footer section {
 
 @media screen and (max-width: 730px) {
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     main {
         margin: 0;
     }
+
     #main-header {
         display: flex;
         flex-direction: column-reverse;
@@ -161,11 +171,11 @@ footer section {
     }
 
     #main-header img {
-        margin: -20px 0;
+        margin-bottom: 20px;
     }
 
     #main-header h1 {
-        color: white;
-        font-size: 2em;
+        color: #464646;
+        font-size: 1.6em;
     }
 }
