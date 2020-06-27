@@ -122,6 +122,10 @@ section h2 {
     display: block;
 }
 
+#products img {
+    max-width: 100%;
+}
+
 #members ul {
     margin: 0;
     padding: 0 100px;
