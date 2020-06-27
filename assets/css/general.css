@@ -35,6 +35,23 @@ a:visited {
     color: rgb(240, 152, 44);
 }
 
+.button-cto {
+    display: inline-block;
+    background: var(--accent-color);
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px black;
+
+    transition: opacity .2s, transform .2s, box-shadow .2s;
+}
+
+.button-cto:hover {
+    opacity: .9;
+    box-shadow: 0 5px 4px black;
+    transform: translate(0, -5px);
+}
+
+
 header {
     min-height: min(600px, 70vh);
     display: flex;
@@ -203,24 +220,11 @@ section h2 {
 }
 
 #join-us-cto {
-    display: block;
-    background: var(--accent-color);
-    /* color: rgb(167, 62, 62); */
     color: var(--main-color);
-    padding: 20px;
+    display: block;
     width: 9em;
     margin: 0 auto;
     margin-top: 10px;
-    border-radius: 6px;
-    box-shadow: 0 2px 3px black;
-
-    transition: opacity .2s, transform .2s, box-shadow .2s;
-}
-
-#join-us-cto:hover {
-    opacity: .9;
-    box-shadow: 0 5px 4px black;
-    transform: translate(0, -5px);
 }
 
 #fb-container {
@@ -239,6 +243,35 @@ footer {
 
 footer section {
     margin: 0;
+}
+
+footer label {
+    font-size: .6em;
+    display: block;
+    margin: 20px 0 5px 0;
+}
+
+footer input, footer textarea {
+    border: none;
+    background: #eee;
+    color: black;
+    border-radius: 2px;
+    font-size: .8em;
+    font-family: unset;
+    outline: none;
+    padding: 5px;
+}
+
+footer textarea {
+    width: 90%;
+    height: 200px;
+    resize: none;
+}
+
+footer .button-cto {
+    margin-top: 10px;
+    font-size: .8em;
+    color: rgb(92, 42, 42);
 }
 
 @keyframes appear-left {
@@ -268,6 +301,10 @@ footer section {
 
     main {
         margin: 0;
+    }
+
+    header {
+        min-height: 400px;
     }
 
     #main-header {
@@ -318,5 +355,9 @@ footer section {
     #join-us {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    footer {
+        display: block;
     }
 }
