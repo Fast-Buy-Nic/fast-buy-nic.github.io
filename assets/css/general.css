@@ -4,7 +4,8 @@ html {
 
     /* Palette */
     --background-color: rgb(255, 255, 255);
-    --main-color: #464646;
+    --main-color: #3f3f3f;
+    --sub-color: #727272;
     --accent-color: rgb(240, 185, 44);
     --secondary-color: rgb(240, 152, 44);
 
@@ -177,16 +178,61 @@ section h2 {
 #join-us img {
     width: 3em;
     vertical-align: middle;
+    margin: 0 10px;
+    filter: invert(60%);
+}
+
+#join-us {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#join-us .join-panel {
+    display: flex;
+    color: var(--secondary-color);
+    margin: 30px auto;
+}
+
+.join-panel .join-us-txt {
+    filter: brightness(90%);
+    max-width: 150px;
+}
+
+#join-us .join-panel:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+#join-us-cto {
+    display: block;
+    background: var(--accent-color);
+    /* color: rgb(167, 62, 62); */
+    color: var(--main-color);
+    padding: 20px;
+    width: 9em;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px black;
+
+    transition: opacity .2s, transform .2s, box-shadow .2s;
+}
+
+#join-us-cto:hover {
+    opacity: .9;
+    box-shadow: 0 5px 4px black;
+    transform: translate(0, -5px);
 }
 
 #fb-container {
     max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 footer {
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: calc(var(--content-width) + 100px);
     margin: 0 auto;
     min-height: 400px;
 }
@@ -267,5 +313,10 @@ footer section {
 
     #goals-container div {
         margin: 10px 0;
+    }
+
+    #join-us {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
