@@ -75,7 +75,7 @@ header h1 {
     );
     margin: 0;
 
-    color: #ff00;
+    color: #fff0;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
@@ -97,6 +97,29 @@ main section {
 section {
     padding: 30px 10px;
     margin: 30px auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#brands {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
+
+#brands .brand-logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#brands img {
+    background: black;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: block;
 }
 
 #members ul {
@@ -133,6 +156,23 @@ section {
 
 #details {
     text-align: center;
+}
+
+#goals-container div {
+    display: inline-block;
+    max-width: calc(var(--content-width)/2 - 50px);
+    vertical-align: top;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+#goals-container .vision {
+    text-align: right;
+}
+
+#join-us img {
+    width: 3em;
+    vertical-align: middle;
 }
 
 #fb-container {
@@ -202,8 +242,26 @@ footer section {
         font-size: 1.6em;
     }
 
+    #brands .brand-logos {
+        display: block;
+    }
+
+    #brands .brand-logos img {
+        width: 80vw;
+        height: 80vw;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+
     #members ul {
         padding: 0 30px;
     }
 
+    #goals-container {
+        font-size: 1rem;
+    }
+
+    #goals-container div {
+        margin: 10px 0;
+    }
 }
