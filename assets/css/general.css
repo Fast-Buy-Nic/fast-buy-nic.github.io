@@ -1,13 +1,28 @@
 html {
     /* font-size: clamp(12px, calc(1.5vw), 40px); */
     font-size: 20px;
+
+    /* Palette */
+    --background-color: rgb(255, 255, 255);
+    --main-color: #464646;
+    --accent-color: rgb(240, 185, 44);
+    --secondary-color: rgb(240, 152, 44);
+
+    --content-width: 1000px;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
 
-    color: #464646
+    color: var(--main-color);
+    background-color: var(--background-color);
+}
+
+::selection {
+    color: var(--main-color);
+    background: var(--accent-color);
+    border-radius: 100%;
 }
 
 a {
@@ -55,8 +70,8 @@ header h1 {
     font-size: 4.5rem;
     background: linear-gradient(
         to left,
-        #fff 0%,
-        #464646 50%
+        var(--background-color) 0%,
+        var(--main-color) 50%
     );
     margin: 0;
 
@@ -71,7 +86,7 @@ header h1 {
 }
 
 main {
-    max-width: 1000px;
+    max-width: var(--content-width);
     margin: 0 auto;
 }
 
@@ -86,7 +101,7 @@ section {
 
 #members ul {
     margin: 0;
-    padding: 0;
+    padding: 0 100px;
 }
 
 .person-info {
@@ -110,6 +125,14 @@ section {
 {
     text-align: right;
     direction: rtl;
+}
+
+.person-name {
+    color: var(--secondary-color);
+}
+
+#details {
+    text-align: center;
 }
 
 #fb-container {
@@ -178,4 +201,9 @@ footer section {
         color: #464646;
         font-size: 1.6em;
     }
+
+    #members ul {
+        padding: 0 30px;
+    }
+
 }
