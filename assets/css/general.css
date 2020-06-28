@@ -70,7 +70,7 @@ header h1, header img{
 .text-anim-t {
     animation-duration: 0.5s;
     animation-delay: 0.5s;
-    animation-timing-function: cubic-bezier(.68,-0.55,.38,1.18);
+   animation-timing-function: cubic-bezier(.68,-0.55,.38,1.18);
     animation-fill-mode: forwards;
 }
 
@@ -175,6 +175,41 @@ section h2 {
 .person-name {
     color: var(--secondary-color);
 }
+
+.job-title
+{
+    position: absolute;
+    text-align: center;
+    transition: all .3s;
+    transform: scale(1.5);
+    opacity: 0;
+
+    
+}
+
+.job-title:hover
+{
+    transform: scale(1);
+    opacity: 1; 
+    text-align: center;
+}
+.person-info
+{
+    position: relative;
+    display: flex;
+   
+    
+}
+
+.job-title p, h4
+{
+  
+    
+    font-size: 14px;
+    color: #000;
+   
+}
+
 
 #details {
     text-align: center;
